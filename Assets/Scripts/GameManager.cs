@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public int PlayerScore { get { return Playerscore; } set { Playerscore = value; } }
     public static GameManager instance;
 
-    void awake()
+    void Awake()
     {
         instance = this;
     }

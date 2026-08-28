@@ -6,7 +6,7 @@ public class Test : MonoBehaviour
     private int n = 0;
 
     private float timer = 0f;
-    void Aweake()
+    void Awake()
     {
         Debug.Log("Awake");
     }
@@ -18,7 +18,7 @@ public class Test : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
         timer += Time.deltaTime;
         n++;
         Debug.Log(Time.deltaTime);
