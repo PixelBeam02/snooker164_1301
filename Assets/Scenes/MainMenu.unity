@@ -782,7 +782,7 @@ MonoBehaviour:
   - {fileID: 170669504}
   - {fileID: 768833168}
   - {fileID: 1524962108}
-  mixer: {fileID: 0}
+  mixer: {fileID: 24100000, guid: a6ac48f09b88b9e4d9eea65d5ed07d00, type: 2}
 --- !u!1 &521871374
 GameObject:
   m_ObjectHideFlags: 0
@@ -3264,6 +3264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
   adjustPanel: {fileID: 628276884}
+  volumeSlider: {fileID: 0}
 --- !u!114 &2125781987
 MonoBehaviour:
   m_ObjectHideFlags: 0
