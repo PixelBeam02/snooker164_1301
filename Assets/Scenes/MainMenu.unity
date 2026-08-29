@@ -238,7 +238,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -1422225869121055334, guid: a6ac48f09b88b9e4d9eea65d5ed07d00, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -782,8 +782,7 @@ MonoBehaviour:
   - {fileID: 170669504}
   - {fileID: 768833168}
   - {fileID: 1524962108}
-  mixer:
-  - {fileID: 24100000, guid: a6ac48f09b88b9e4d9eea65d5ed07d00, type: 2}
+  mixer: {fileID: 0}
 --- !u!1 &521871374
 GameObject:
   m_ObjectHideFlags: 0
@@ -1531,7 +1530,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -1422225869121055334, guid: a6ac48f09b88b9e4d9eea65d5ed07d00, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: d8d04c6f80a1140db85ede568dab1f51, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2028,13 +2027,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 1520846495}
   m_HandleRect: {fileID: 126049377}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -10
+  m_MaxValue: 10
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2125781986}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: SetVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1321576332
 GameObject:
   m_ObjectHideFlags: 0
@@ -2512,7 +2523,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -1422225869121055334, guid: a6ac48f09b88b9e4d9eea65d5ed07d00, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 79180f511d89441b9aa23ccae1992fe0, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
